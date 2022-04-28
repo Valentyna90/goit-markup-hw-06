@@ -523,25 +523,57 @@
           </ul>
         </div>
 
+        <form class="footer-form" autocomplete="off">
+        <b class="footer-subscribe-title">Подпишитесь на рассылку</b>
         <div class="footer-subscribe">
-          <p class="footer-subscribe-title">Подпишитесь на рассылку</p>
-           <form class=footer-form">
-            <input class="footer-subscribe-email" type="email" name="email" placeholder="E-mail" autocomplete="off">
-                    <button class="footer-subscribe-button" type="submit"> 
-                    Подписаться
-                        <svg class="footer-button-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"> </use>
-                        </svg>
-                    </button>
+          <input class="footer-subscribe-input" type="email" name="email" placeholder="E-mail"/>
+            <button class="footer-subscribe-button" type="submit">
+              <span class="subscribe-btn-span">
+                Подписаться</span>
+                <svg class="footer-button-icon" width="24" height="24">
+                  <use href="./images/icons/icon_1.svg#icon-send"></use>
+                </svg>
+            </button>
+        </div>
+        </form>
     </footer>
     <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+
         <button type="button" class="close-btn" data-modal-close>
           <svg class="icon-close" width="11" height="11">
             <use href="./images/icons/icon_2.svg#icon-Vector"></use>
           </svg>
         </button>
+
+        <!-- ФОРМА -->
+        <form class="form-modal js-speaker-form">
+          <div class="form-field">
+            <lable class="form-lable" for="name">Имя</lable>
+              <input class="form-input" type="text" name="username" id="name">
+          </div>
+
+          <div class="form-field">
+            <lable class="form-lable" for="tel">Телефон</lable>
+              <input class="form-input" type="tel" name="tel" id="tel">
+          </div>
+
+          <div class="form-field">
+            <lable class="form-lable" for="email">Почта</lable>
+              <input class="form-input" type="email" name="email" id="email">
+          </div>
+
+          <div class="form-field">
+            <lable class="form-lable" for="comment">Комментарий</lable>
+              <textarea class="form-comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+          <p class="form-agreement">Соглашаюсь с рассылкой и принимаю</p>
+          <a class="form-link" href="">Условия договора</a>
+ 
+
+        </form>
       </div>
     </div>
     <!-- КОНЕЦ МОДАЛЬНОГО ОКНА -->
